@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet"> 
+    <style>
+    
+    @charset "UTF-8";
+*{
+margin: 0;
+padding: 0;
+
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.3),#17142d), url(/LandingPageImages/landingbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 3%;
+    left: 8%;
+}
+
+.banner-text{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 1%;
+}
+.banner-text h1{
+    font-size: 130px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.loginbutton{
+	margin-top: 2%;
+	margin-left: 80%;
+	margin-bottom: 10%;
+}
+.loginbutton a:hover{
+	color: black;
+}
+.loginbutton a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 12px;
+	padding: 12px 0;
+	color: white;
+	font-size: 20px;
+	border: 0.5px solid white;
+}
+
+/* features*/
+
+#features{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.features{
+	margin-top:-6%;
+}
+
+.title-text{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 25px;
+    color: #1056d7;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);  
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.title-text h1{
+    font-size: 50px;;
+}
+
+.feature-box{
+    width: 80%;
+    padding-bottom: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+
+.features{
+    flex-basis: 50%;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+
+}
+
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+
+}
+
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+    
+    
+    /* -------------------service -------------------------- */
+    
+    #service{
+    width: 100%;
+    padding: 20px 0;
+    background : #efefef;
+    }
+    
+    .service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    }
+    
+    
+    .single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    }
+    
+    .single-service img{
+    	width: 100%;
+    	border-radius: 7px;
+    }
+    .overlay{
+    	width: 100%;
+    	height: 100%;
+    	position: absolute;
+    	top: 0;
+    	border-radius: 7px;
+    	cursor:pointer;
+    	background: linear-gradient(rgba(0,0,0,0.2),#0f2e46);
+    	opacity:0;
+    	transition:1s;
+    }
+    
+    .single-service:hover .overlay{
+    	opacity: 1;
+    }
+    
+    .service-desc{
+    	width: 80%;
+    	position: absolute;
+    	bottom: 0%;
+    	left: 50%;
+    	opacity: 0;
+    	transform: translateX(-50%);
+    	transition: 1s;
+    }
+    hr{
+    	background: #fff;
+    	height: 2px;
+    	border: 0;
+    	margin: 15px auto;
+    	width: 60%;
+    }
+    .service-desc p{
+    	font-size: 14px;
+    }
+    
+    .single-service:hover .service-desc{
+    	bottom: 40%;
+    	opacity: 1;
+    }
+    
+    
+    /*  footer*/
+    
+    #footer{
+    	padding: 40px 0 20px;
+    	background: rgb(177, 206, 231);
+    	position: relative;
+    	
+    }
+    .footer-row{
+    	width: 80%;
+    	margin: 0 auto;
+    	display: flex;
+    	justify-content: space-between;
+    	flex-wrap:wrap;
+    }
+    .footer-left,.footer-right{
+    	flex-basis: 45%;
+    	padding: 10px;
+    	margin-bottom:20px;
+    	
+    }
+    .footer-right{
+    text-align:right;
+    }
+    
+    .footer-row h1{
+    	margin: 10px 0;
+    }
+    
+    .footer-row p{
+    	line-height : 35px;
+    }
+    
+    .footer-img{
+    	max-width: 370px;
+    	opacity: 0.1;
+    	position: absolute;
+    	left:50%;
+    	top: 45%;
+    	transform: translate(-50%,-50%);
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <section id="banner">
+
+        <img src="LandingPageImages/logo.png" class="logo">
+        <div class="banner-text">
+            <div class="loginbutton">
+                <a href="/login">Login</a>
+            </div>
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+        </div>
+    </section>
+    <section id="Features">
+
+        <div class="title-text">
+
+            <p>FEATURES</p>
+            <h1>Why choose us</h1>
+        </div>
+
+        <div class="feature-box">
+            <div class="features">
+                <h1>Expreience Staff</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+						
+                    </div>
+                    <div class="feature-text">
+                        <p>shda askjhkla gajdfglka fhgkjadhf gjadh agdf askdhkj akgjhiuhgio hfiudah igdahlgh <br>fgladh fgl</p>
+                    </div>
+                </div>
+           
+                <h1>Affordable Cost</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+						
+                    </div>
+                    <div class="feature-text">
+                        <p>shda askjhkla gajdfglka fhgkjadhf gjadh fgladh fgl<br>fshtsdfhsthsrj  fsghh sfgh<p>
+                    </div>
+                </div>
+                
+                <h1>Affordable Cost</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+						
+                    </div>
+                    <div class="feature-text">
+                        <p>shda askjhkla gajdfglka fhgkjadhf gjadh fgladh fgl<br>dfgag,mandjgnarekjgn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-img">
+                <img src="LandingPageImages/barber-man.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-- service section -->
+    <section id="service">
+    	<div class="title-text">
+    	
+    	<p>SERVICES</p>
+    	<h1>We Provide Better</h1>
+    	</div>
+		
+		<div class="service-box">
+			<div class="single-service">
+				<img src="LandingPageImages/landingbackground.jpg">
+				<div class="overlay">
+				
+				</div>
+				<div class="service-desc">
+				<h3>Hair Style</h3>
+				<hr>
+				<p>shdgjas gjashdgjka hfglkahdfgk jhadfjgkhkd jfhgjadfhgjkahfdghadjghadfjgjkadghkjahfdg</p>
+				</div>
+			</div>
+			
+			<div class="single-service">
+				<img src="LandingPageImages/landingbackground.jpg">
+				<div class="overlay">
+				
+				</div>
+				<div class="service-desc">
+				<h3>Hair Style</h3>
+				<hr>
+				<p>shdgjas gjashdgjka hfglkahdfgk jhadfjgkhkd jfhgjadfhgjkahfdghadjghadfjgjkadghkjahfdg</p>
+				</div>
+			</div>
+			
+			<div class="single-service">
+				<img src="LandingPageImages/landingbackground.jpg">
+				<div class="overlay">
+				
+				</div>
+				<div class="service-desc">
+				<h3>Hair Style</h3>
+				<hr>
+				<p>shdgjas gjashdgjka hfglkahdfgk jhadfjgkhkd jfhgjadfhgjkahfdghadjghadfjgjkadghkjahfdg</p>
+				</div>
+			</div>
+			
+			<div class="single-service">
+				<img src="LandingPageImages/landingbackground.jpg">
+				<div class="overlay">
+				
+				</div>
+				<div class="service-desc">
+				<h3>Hair Style</h3>
+				<hr>
+				<p>shdgjas gjashdgjka hfglkahdfgk jhadfjgkhkd jfhgjadfhgjkahfdghadjghadfjgjkadghkjahfdg</p>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+	<!--  footer section -->
+	
+	<section id="footer">
+		<img src="LandingPageImages/footer-img.png" class="footer-img">
+		<div class="title-text">
+		<p>CONTACT</p>
+		<h1>Visit Our Shop Today</h1>
+		</div>
+		<div class="footer-row">
+			<div class="footer-left">
+				<h1>Opening Hours</h1>
+				<p>Monday to Friday - 9am to 9pm</p>
+				<p>Saturday and Sunday - 8am to 11pm</p>
+			</div>
+			<div class="footer-right">
+				<h1>Get In Touch</h1>
+				<p>Address: Handewadi, wanowadi</p>
+				
+				<p>email@gmail.com</p>
+				<p>+91 9482517658</p>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,43 @@
+.row{
+        	margin-top: 1%;
+        	
+        }
+        .tb{
+        	float: left;
+        	width: 95%;
+        	margin-top: 1%;
+        	margin-left: 2%;
+        	
+        }
+        table{
+        text-align: center
+        }
+        #delete{
+        margin-left:2%;
+        }
+        #update{
+        margin-right:2%;
+        }
+        #addbutton{
+        margin-left:1.5%;
+        
+        	
+        }
+      
+        .catName{
+        float:left;
+        margin-top: 1%;
+        margin-left: 35%
+       
+        }
+        
+          th{
+            position: sticky;
+            top: 0px;
+        }
+        
+        .table-wrapper{
+        
+        	max-height: 580px;
+        	overflow-y: scroll;
+        }
